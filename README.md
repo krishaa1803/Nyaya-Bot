@@ -1,6 +1,4 @@
-Here’s a modified and organized **README file** for your Python-based NYAYABOT project:
 
----
 
 # **Justice, Anytime, Anywhere – NYAYABOT**
 
