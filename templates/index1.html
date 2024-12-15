@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyaya Bot</title>
+    <link rel="stylesheet" href="static/css/style.css"> <!-- Use relative path -->
+    <script src="static/js/index.js" defer></script> <!-- Use relative path -->
+    <style>
+        /* Additional styles to improve input field and button */
+        body {
+            font-family: Arial, sans-serif; /* Set a default font */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+        
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .chat-area {
+            flex: 1;
+            padding: 20px;
+            background: #ffffff;
+        }
+
+        .chat-input {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 10px; /* Increase padding */
+            font-size: 16px; /* Increase font size */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .chat-input button {
+            padding: 10px 15px; /* Increase button size */
+            font-size: 16px;
+            background-color: #FFBF00; /* Yellow button */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .chat-input button:hover {
+            background-color: #e6a600; /* Darken button on hover */
+        }
+
+        .chat-content {
+            max-height: 400px; /* Limit chat area height */
+            overflow-y: auto; /* Enable scrolling */
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Nyaya Bot</h2>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+            </div>
+            <nav class="chat-list">
+                <div class="chat-item">
+                    <span>Department of Justice</span>
+                </div>
+                <div class="chat-item">
+                    <span>Tele-Law</span>
+                </div>
+            </nav>
+            <footer class="footer">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </footer>
+        </aside>
+
+        <!-- Chat Area -->
+        <main class="chat-area">
+            <header class="chat-header">
+                <h2>Welcome to Nyaya Bot</h2>
+            </header>
+            <div class="chat-content" id="doj-content">
+                <div class="chat-message">
+                    <div class="message-header">Bot:</div>
+                    <div class="message-body">
+                        <p>How can I assist you today? Ask me anything about the Department of Justice.</p>
+                    </div>
+                </div>
+            </div>
+            <form id="nyaya-form" class="chat-input">
+                <label for="user-query">Ask something:</label>
+                <input type="text" id="user-query" placeholder="Tell me about the Department of Justice" />
+                <button type="submit">Submit</button>
+            </form>
+        
+            <div id="doj-content">Loading Department of Justice information...</div>
+        
+        </main>
+    </div>
+</body>
+</html>
