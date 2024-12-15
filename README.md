@@ -1,20 +1,49 @@
+Here’s a modified and organized **README file** for your Python-based NYAYABOT project:
 
-Web scraping is the process of automatically extracting information from websites. It involves fetching web pages, parsing their content, and extracting relevant data for further analysis or use. 
-Python is a popular programming language for web scraping due to its robust libraries and ease of use.
+---
 
-## Libraries used in python: <br>
+# **Justice, Anytime, Anywhere – NYAYABOT**
 
-There are several libraries in Python that are commonly used for web scraping.<br>
-1. Beautiful Soup: A powerful library for parsing HTML and XML documents.<br>
-2. Requests: A library for making HTTP requests and handling responses.<br>
+**NYAYABOT** is an AI-powered chatbot integrated into the Department of Justice (DoJ) website. It serves as a centralized portal for citizens to access legal information such as judge appointments, fines, eFiling procedures, and Fast Track Courts. The bot leverages advanced natural language processing (NLP) to deliver automated responses, streamlining legal information access for citizens.
 
-## Install Required Libraries: <br>
-Install the necessary libraries using pip. For example, to install Beautiful Soup and Requests use the following command<br>
-```python
-pip install beautifulsoup4 requests
+---
+
+## **Features**
+- **AI-Powered Chatbot**: Provides instant responses to judicial and legal queries.
+- **Legal Information Consolidation**: Centralized access to judge appointments, fine payments, and eFiling procedures.
+- **User-Friendly Interface**: Simplified navigation of DoJ resources.
+- **Secure and Scalable Backend**: Built with Flask and PHP for efficient data processing.
+
+---
+
+## **Technologies Used**
+- **Frontend**: HTML, CSS, JavaScript (Planned: Bootstrap, React.js for enhanced interactivity).
+- **Backend**: Flask, PHP (Future: LangChain, large language models for advanced NLP).
+- **UI/UX Design**: Prototyped using Figma, emphasizing accessibility and user experience.
+
+---
+
+## **Setup and Installation**
+
+### **1. Clone the Repository**
+```bash
+git clone https://github.com/yourusername/Nyaya-Bot.git
+cd Nyaya-Bot
 ```
 
-## Send HTTP Requests: <br>
-Use the requests library to send an HTTP GET request to the URL of the webpage you want to scrape.<br>
+### **2. Install Dependencies**
+Make sure Python and pip are installed. Then, create a virtual environment and install the required Python libraries:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
 
+### **3. Run the Application**
+Start the Flask server:
+```bash
+python app.py
+```
 
+### **4. Access the Application**
+Open your browser and navigate to localhost
