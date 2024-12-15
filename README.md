@@ -22,7 +22,7 @@ Here’s a modified and organized **README file** for your Python-based NYAYABOT
 - **UI/UX Design**: Prototyped using Figma, emphasizing accessibility and user experience.
 
 ---
-##**Video**
+## **Video**
 https://www.youtube.com/watch?v=TPBX8LXLNss
 
 ## **Setup and Installation**
